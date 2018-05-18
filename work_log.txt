@@ -18,3 +18,11 @@ May 18, 2018
 join the ubuntu to domain
 domainjoin-cli join your-domain-name Administrator
 lwconfig AssumeDefaultDomain True
+
+To add static IP to internal IP
+Physically connect ethx to Telus modem
+Login Telus, assign MAC to the static IP
+Login watchguard web mode,Go Firewall-SNAT and Firepolicy
+point to the internal static IP
+
+ 
