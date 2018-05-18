@@ -26,3 +26,6 @@ Login watchguard web mode,Go Firewall-SNAT and Firepolicy
 point to the internal static IP
 
  
+VDI(Virtualbox Disk Image)
+VHD(Virtual Machine Hard Disk)
+VMDK(Virtual Machine Disk)
