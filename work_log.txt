@@ -29,3 +29,16 @@ point to the internal static IP
 VDI(Virtualbox Disk Image)
 VHD(Virtual Machine Hard Disk)
 VMDK(Virtual Machine Disk)
+
+May 22,2018
+1.WatchGuard 
+Go  Network   -Interface  -eth7 set DHCP
+2.Go watchguard client
+get MAC address
+3,go telus,and assign the MAC address to a static IP
+4.GO firewall ,SNAT,Create svn.snat
+5.go firewall, firewall policy
+
+
+
+5.
