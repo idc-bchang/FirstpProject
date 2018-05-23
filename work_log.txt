@@ -41,4 +41,29 @@ get MAC address
 
 
 
-5.
+May 23,2018
+Install svn in 192.168.16 ubuntu 18 server
+1.卸载svn
+利用以下命令查看自己的系统是否已经安装了svn：
+上面显示为未安装，如果显示一下信息说明已安装，可以使用以下命令进行卸载：
+sudo apt-get remove --purge subversion
+(–purge 选项表示彻底删除改软件和相关文件)
+2.安装svn
+安装前建议更新一下z，再进行安装：
+sudo apt-get update
+sudo apt-get install subversion
+上图显示安装成功。
+可以验证一下，通过如下命令：
+svn help            //--svn帮助
+svn --version       //--svn版本
+svnserve --version  //--svn server版本
+3.创建SVN版本库
+a：创建项目目录和svn仓库：
+sudo mkdir  /home/svn
+sudo mkdir  /home/svn/repository
+sudo chmod -R 777 /home/svn/repository
+sudo svnadmin create /home/svn/repository
+执行命令后，会在repository下生成以下文件：
+对db进行权限设置：
+sudo chmod -R 777 db
+否则会报错
